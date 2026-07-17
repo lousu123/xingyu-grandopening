@@ -3,82 +3,50 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>幸屿馄饨·手作糖水 — 试营业×开业活动方案 V2.0</title>
+<title>幸屿馄饨·手作糖水 — 试营业×开业活动方案 V2.1</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{
-  font-family:-apple-system,PingFang SC,Helvetica Neue,Microsoft YaHei,sans-serif;
-  background:linear-gradient(135deg,#fdf6f0 0%,#fce9e0 100%);
-  color:#4a3728;
-  line-height:1.8;
-  padding:0 0 60px
-}
-.header{
-  background:linear-gradient(135deg,#f7c5b0 0%,#f5a88e 100%);
-  padding:50px 20px 35px;
-  text-align:center;position:relative;overflow:hidden
-}
-.header::before{
-  content:'';position:absolute;top:-30px;left:-30px;
-  width:150px;height:150px;
-  background:radial-gradient(circle,rgba(255,255,255,0.15) 0%,transparent 70%);border-radius:50%
-}
-.header::after{
-  content:'';position:absolute;bottom:-40px;right:-20px;
-  width:200px;height:200px;
-  background:radial-gradient(circle,rgba(255,255,255,0.1) 0%,transparent 70%);border-radius:50%
-}
+body{font-family:-apple-system,PingFang SC,Helvetica Neue,Microsoft YaHei,sans-serif;background:linear-gradient(135deg,#fdf6f0 0%,#fce9e0 100%);color:#4a3728;line-height:1.8;padding:0 0 60px}
+.header{background:linear-gradient(135deg,#f7c5b0 0%,#f5a88e 100%);padding:50px 20px 35px;text-align:center;position:relative;overflow:hidden}
+.header::before{content:'';position:absolute;top:-30px;left:-30px;width:150px;height:150px;background:radial-gradient(circle,rgba(255,255,255,0.15) 0%,transparent 70%);border-radius:50%}
+.header::after{content:'';position:absolute;bottom:-40px;right:-20px;width:200px;height:200px;background:radial-gradient(circle,rgba(255,255,255,0.1) 0%,transparent 70%);border-radius:50%}
 .header h1{font-size:26px;color:#fff;font-weight:700;position:relative;z-index:1;text-shadow:0 2px 8px rgba(0,0,0,0.08)}
 .header .subtitle{font-size:14px;color:rgba(255,255,255,0.9);margin-top:8px;position:relative;z-index:1}
-.header .badge{
-  display:inline-block;background:rgba(255,255,255,0.25);backdrop-filter:blur(4px);
-  padding:4px 16px;border-radius:20px;color:#fff;font-size:12px;margin-top:12px;position:relative;z-index:1
-}
-.info-card{
-  background:#fff;border-radius:16px;padding:20px;
-  margin:-20px 20px 24px;box-shadow:0 4px 20px rgba(245,168,142,0.15);position:relative;z-index:2
-}
+.header .badge{display:inline-block;background:rgba(255,255,255,0.25);backdrop-filter:blur(4px);padding:4px 16px;border-radius:20px;color:#fff;font-size:12px;margin-top:12px;position:relative;z-index:1}
+.info-card{background:#fff;border-radius:16px;padding:20px;margin:-20px 20px 24px;box-shadow:0 4px 20px rgba(245,168,142,0.15);position:relative;z-index:2}
 .info-card .row{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px dashed #f5e6de}
 .info-card .row:last-child{border-bottom:none}
 .info-card .label{color:#b89580;font-size:13px;flex-shrink:0}
 .info-card .value{color:#4a3728;font-size:14px;font-weight:500;text-align:right}
-.version-note{
-  background:#fff;border-radius:12px;padding:12px 16px;margin:0 20px 20px;
-  display:flex;align-items:center;gap:8px;font-size:13px;color:#b89580;
-  box-shadow:0 2px 8px rgba(245,168,142,0.08)
-}
+.version-note{background:#fff;border-radius:12px;padding:12px 16px;margin:0 20px 20px;display:flex;align-items:center;gap:8px;font-size:13px;color:#b89580;box-shadow:0 2px 8px rgba(245,168,142,0.08)}
 .version-note .v-tag{background:#f7c5b0;color:#fff;padding:2px 10px;border-radius:8px;font-size:11px;flex-shrink:0}
-.risk-alert{
-  background:linear-gradient(135deg,#fff5f0,#ffe8e0);border:1px solid #f7c5b0;
-  border-radius:14px;padding:18px 20px;margin:0 20px 24px
-}
+.risk-alert{background:linear-gradient(135deg,#fff5f0,#ffe8e0);border:1px solid #f7c5b0;border-radius:14px;padding:18px 20px;margin:0 20px 24px}
 .risk-alert-title{font-size:15px;font-weight:700;color:#c85530;margin-bottom:10px}
 .risk-item{font-size:13px;color:#6a4738;padding:6px 0;border-bottom:1px dashed #f5d5c5;line-height:1.7}
 .risk-item:last-child{border-bottom:none}
 .risk-item strong{color:#c85530}
+
+/* Location Analysis */
+.location-box{background:#fff;border-radius:14px;padding:18px 20px;margin:0 20px 24px;border:1px solid rgba(245,168,142,0.08)}
+.location-box-title{font-size:15px;font-weight:700;color:#e8835c;margin-bottom:10px}
+.location-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.location-item{background:linear-gradient(135deg,#fdf6f0,#fce9e0);border-radius:10px;padding:12px;text-align:center}
+.location-item .l-icon{font-size:22px;margin-bottom:4px}
+.location-item .l-label{font-size:11px;color:#b89580}
+.location-item .l-value{font-size:13px;font-weight:600;color:#4a3728;margin-top:2px}
+.flow-line{display:flex;align-items:center;justify-content:center;gap:6px;margin:12px 0;padding:10px;background:linear-gradient(135deg,#fdf6f0,#fce9e0);border-radius:10px;font-size:13px;color:#5a4738}
+
 .section{margin:28px 20px}
-.section-title{
-  font-size:18px;font-weight:700;color:#e8835c;
-  padding-left:14px;border-left:3px solid #f5a88e;margin-bottom:16px;display:flex;align-items:center;gap:8px
-}
+.section-title{font-size:18px;font-weight:700;color:#e8835c;padding-left:14px;border-left:3px solid #f5a88e;margin-bottom:16px;display:flex;align-items:center;gap:8px}
 .section-title .emoji{font-size:20px}
-.card{
-  background:#fff;border-radius:14px;padding:18px;margin-bottom:14px;
-  box-shadow:0 2px 12px rgba(245,168,142,0.1);border:1px solid rgba(245,168,142,0.08)
-}
+.card{background:#fff;border-radius:14px;padding:18px;margin-bottom:14px;box-shadow:0 2px 12px rgba(245,168,142,0.1);border:1px solid rgba(245,168,142,0.08)}
 .card-title{font-size:15px;font-weight:600;color:#e8835c;margin-bottom:10px;display:flex;align-items:center;gap:8px}
-.card-title .tag{
-  display:inline-block;background:linear-gradient(135deg,#f7c5b0,#f5a88e);
-  color:#fff;font-size:11px;padding:2px 10px;border-radius:10px;font-weight:400;margin-left:auto
-}
+.card-title .tag{display:inline-block;background:linear-gradient(135deg,#f7c5b0,#f5a88e);color:#fff;font-size:11px;padding:2px 10px;border-radius:10px;font-weight:400;margin-left:auto}
 .card p,.card li{font-size:14px;color:#5a4738;line-height:1.9}
 .card ul{padding-left:18px}
 .card ul li{margin-bottom:4px}
 table{width:100%;border-collapse:collapse;font-size:13px}
-table th{
-  background:linear-gradient(135deg,#f7c5b0,#f5a88e);color:#fff;
-  padding:10px 8px;text-align:center;font-weight:600
-}
+table th{background:linear-gradient(135deg,#f7c5b0,#f5a88e);color:#fff;padding:10px 8px;text-align:center;font-weight:600}
 table th:first-child{border-radius:8px 0 0 0}
 table th:last-child{border-radius:0 8px 0 0}
 table td{padding:10px 8px;text-align:center;border-bottom:1px solid #f5e6de;color:#5a4738}
@@ -86,52 +54,36 @@ table tr:nth-child(even){background:#fdf8f5}
 table .price{color:#e85d3a;font-weight:700;font-size:15px}
 table .original{text-decoration:line-through;color:#b89580;font-size:12px;margin-left:4px}
 table .gift{color:#e8835c;font-weight:600}
+table .highlight-row{background:#fff3e8!important}
 .timeline{position:relative;padding-left:28px}
-.timeline::before{
-  content:'';position:absolute;left:8px;top:4px;bottom:4px;
-  width:2px;background:linear-gradient(180deg,#f7c5b0,#f5a88e,transparent)
-}
+.timeline::before{content:'';position:absolute;left:8px;top:4px;bottom:4px;width:2px;background:linear-gradient(180deg,#f7c5b0,#f5a88e,transparent)}
 .timeline-item{position:relative;margin-bottom:16px;padding-bottom:4px}
-.timeline-item::before{
-  content:'';position:absolute;left:-24px;top:6px;
-  width:12px;height:12px;border-radius:50%;
-  background:linear-gradient(135deg,#f7c5b0,#f5a88e);border:2px solid #fff;box-shadow:0 0 0 2px #f5a88e
-}
+.timeline-item::before{content:'';position:absolute;left:-24px;top:6px;width:12px;height:12px;border-radius:50%;background:linear-gradient(135deg,#f7c5b0,#f5a88e);border:2px solid #fff;box-shadow:0 0 0 2px #f5a88e}
 .timeline-item .tl-time{font-size:12px;color:#b89580;margin-bottom:2px}
 .timeline-item .tl-title{font-size:14px;font-weight:600;color:#4a3728}
 .timeline-item .tl-desc{font-size:13px;color:#6a5748;margin-top:2px}
 .tag-group{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
-.tag-item{
-  background:linear-gradient(135deg,#fdf6f0,#fce9e0);border:1px solid #f5d5c5;
-  color:#e8835c;font-size:12px;padding:2px 10px;border-radius:12px
-}
-.highlight{
-  background:linear-gradient(135deg,#fdf6f0,#fce9e0);border:1px solid #f5d5c5;
-  border-radius:12px;padding:14px 16px;margin:12px 0
-}
+.tag-item{background:linear-gradient(135deg,#fdf6f0,#fce9e0);border:1px solid #f5d5c5;color:#e8835c;font-size:12px;padding:2px 10px;border-radius:12px}
+.highlight{background:linear-gradient(135deg,#fdf6f0,#fce9e0);border:1px solid #f5d5c5;border-radius:12px;padding:14px 16px;margin:12px 0}
 .highlight-title{font-size:13px;font-weight:600;color:#e8835c;margin-bottom:6px}
 .highlight p{font-size:13px;color:#6a5748;line-height:1.7}
 .footer{text-align:center;padding:30px 20px 20px;color:#b89580;font-size:13px}
-.footer .sig{color:#e8835c;font-weight:500;margin-top:4px}
 .star-step{display:flex;align-items:flex-start;gap:12px;padding:12px 0;border-bottom:1px dashed #f5e6de}
 .star-step:last-child{border-bottom:none}
-.star-step .step-num{
-  width:32px;height:32px;flex-shrink:0;border-radius:50%;
-  display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;color:#fff
-}
+.star-step .step-num{width:32px;height:32px;flex-shrink:0;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;color:#fff}
 .step-week1 .step-num{background:linear-gradient(135deg,#f7c5b0,#e8835c)}
 .step-week2 .step-num{background:linear-gradient(135deg,#f5a88e,#d46a45)}
 .step-week3 .step-num{background:linear-gradient(135deg,#e8835c,#c85530)}
 .star-step .step-text{flex:1}
 .star-step .step-text .step-title{font-size:14px;font-weight:600;color:#4a3728}
 .star-step .step-text .step-desc{font-size:13px;color:#6a5748;margin-top:2px}
-.hook-box{
-  background:linear-gradient(135deg,#fff3e8,#fde8d8);border:2px solid #f5a88e;
-  border-radius:14px;padding:16px;margin:12px 0;text-align:center
-}
+.hook-box{background:linear-gradient(135deg,#fff3e8,#fde8d8);border:2px solid #f5a88e;border-radius:14px;padding:16px;margin:12px 0;text-align:center}
 .hook-box .hook-icon{font-size:28px;margin-bottom:6px}
 .hook-box .hook-title{font-size:15px;font-weight:700;color:#c85530;margin-bottom:4px}
 .hook-box .hook-desc{font-size:13px;color:#6a4738;line-height:1.7}
+.sig-box{border-left:3px solid #f5a88e;padding:10px 16px;background:linear-gradient(135deg,#fdf6f0,#fce9e0);border-radius:8px;margin:12px 0}
+.sig-box p{font-size:14px;color:#4a3728;line-height:1.8;margin-bottom:6px}
+.sig-box .sig-label{font-size:12px;color:#b89580}
 </style>
 </head>
 <body>
@@ -143,27 +95,138 @@ table .gift{color:#e8835c;font-weight:600}
 </div>
 
 <div class="version-note">
-  <span class="v-tag">V2.0</span>
-  <span>综合风险优化版 -- 防羊毛党 统一主题 强留客钩子</span>
+  <span class="v-tag">V2.1</span>
+  <span>位置精耕版：金街夜市步行街主通道 过路客截流策略</span>
 </div>
 
 <div class="info-card">
-  <div class="row"><span class="label">位置</span><span class="value">外滩/金街 金街夜市2楼</span></div>
+  <div class="row"><span class="label">位置</span><span class="value">金街夜市步行街主通道2楼</span></div>
   <div class="row"><span class="label">面积</span><span class="value">60m2</span></div>
   <div class="row"><span class="label">人均</span><span class="value">30+</span></div>
   <div class="row"><span class="label">当前状态</span><span class="value">暂无星级 试营业中</span></div>
-  <div class="row"><span class="label">品类</span><span class="value">馄饨 手作糖水</span></div>
+  <div class="row"><span class="label">街道环境</span><span class="value">主通道 人流量巨大 夜宵属性</span></div>
 </div>
 
-<div class="risk-alert">
-  <div class="risk-alert-title">风险预警 优化说明</div>
-  <div class="risk-item"><strong>风险1：折扣太猛招羊毛党</strong> 已改为<strong>折扣转赠品</strong>策略，Day1送限定糖水、Day2买一送一同价、Day3立减20，降幅温和价格回得去。</div>
-  <div class="risk-item"><strong>风险2：活动割裂顾客记不住</strong> 已改为<strong>统一主题逐日加码</strong>，三天统一叫开业狂欢7折起，逐日增加权益，促销越简单成交率越高。</div>
-  <div class="risk-item"><strong>风险3：只做交易没留客</strong> 已新增<strong>+0.1元锁客钩子</strong>，消费满30+0.1元换购15元糖水券限7天，把开业热度拉长到第二周。</div>
+<!-- Location Analysis -->
+<div class="location-box">
+  <div class="location-box-title">位置精准画像 金街夜市步行街主通道</div>
+  <div class="location-grid">
+    <div class="location-item"><div class="l-icon">人</div><div class="l-label">客流属性</div><div class="l-value">纯过路客95%</div></div>
+    <div class="location-item"><div class="l-icon">菜</div><div class="l-label">竞品格局</div><div class="l-value">刚需快餐为主</div></div>
+    <div class="location-item"><div class="l-icon">茶</div><div class="l-label">流量标杆</div><div class="l-value">库迪+1点点紧邻</div></div>
+    <div class="location-item"><div class="l-icon">月</div><div class="l-label">夜宵时段</div><div class="l-value">21:00后仍热闹</div></div>
+  </div>
+  <div class="flow-line">
+    公安锅盔 张亮麻辣烫 米线 烤鱼 库迪咖啡 1点点 幸屿馄饨糖水
+  </div>
+  <div class="sig-box">
+    <p><strong>核心洞察：</strong>这条街上的顾客从看到你的店到走过最多<strong>3秒</strong>。你的糖水杯装化后可以跟库迪、1点点抢同一批客群。</p>
+    <p><strong>差异化打：</strong>馄饨+糖水组合既有快餐属性又有甜品差异化，必须把<strong>糖水</strong>作为核心差异化打出来。</p>
+  </div>
 </div>
 
 <div class="section">
-  <div class="section-title"><span class="emoji">火</span> 试营业蓄水（现在~开业前）</div>
+  <div class="section-title"><span class="emoji">门</span> 门头截流 三秒定生死</div>
+
+  <div class="card">
+    <div class="card-title">门头视觉方案 <span class="tag">3秒法则</span></div>
+    <p style="font-size:14px;font-weight:600;color:#e8835c;margin-bottom:8px">门头上排大字：</p>
+    <div class="highlight" style="font-size:18px;font-weight:700;text-align:center;padding:20px;color:#4a3728">
+      手作糖水 现包馄饨
+    </div>
+    <p style="font-size:14px;font-weight:600;color:#e8835c;margin:10px 0 8px">门口巨幅海报（竖版）：</p>
+    <div class="highlight" style="font-size:16px;text-align:center;padding:20px;background:linear-gradient(135deg,#f7c5b0,#f5a88e);color:#fff;border:none">
+     逛累了，进来喝碗糖水歇歇脚
+    </div>
+    <p style="font-size:13px;color:#6a5748;margin-top:8px">这句比写开业8.8折更能打动过路客。夜市逛街的人不是在找打折是在找歇脚的地方。</p>
+  </div>
+
+  <div class="card">
+    <div class="card-title">走出去截流 <span class="tag">主动出击</span></div>
+    <p style="font-size:14px;font-weight:600;color:#e8835c;margin-bottom:8px">人员配置：1名员工 站在店门口3米处</p>
+    <div class="highlight" style="text-align:center;padding:16px">
+      <p style="font-size:15px;color:#4a3728;font-weight:500">端一盘小杯试饮（桂花酒酿小圆子 一口量）</p>
+      <p style="font-size:22px;margin:8px 0">往北走 金街 往南走 外滩</p>
+      <p style="font-size:15px;color:#c85530;font-weight:600">话术：新店开业，免费请您喝杯糖水！进店还有馄饨买一送一！</p>
+    </div>
+    <p style="font-size:13px;color:#6a5748;margin-top:6px">试饮杯成本约0.5元/杯，每天准备200杯成本100元。拦截转化率预估15-20%，远高于等客上门。</p>
+  </div>
+
+  <div class="card">
+    <div class="card-title">逛吃外带套餐 <span class="tag">边走边吃</span></div>
+    <p style="font-size:13px;color:#6a5748;margin-bottom:10px">针对这条街边逛边吃的属性，推出外带能量包：</p>
+    <table>
+      <tr><th>套餐名</th><th>内容</th><th>价格</th><th>包装</th></tr>
+      <tr class="highlight-row">
+        <td><strong style="color:#e8835c">逛吃能量包</strong></td>
+        <td>杯装馄饨 + 杯装糖水 + 纸巾</td>
+        <td class="price">29.9</td>
+        <td>一杯拿手上边走边吃</td>
+      </tr>
+    </table>
+    <div class="highlight" style="margin-top:10px">
+      <div class="highlight-title">门口灯箱展示</div>
+      <p>门口放一个灯箱，字要大，让路人3米外就能看清价格。配图：一个人一手拿馄饨杯一手拿糖水杯走在夜市上。</p>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title"><span class="emoji">邻</span> 蹭邻居流量 错位竞争</div>
+
+  <div class="card">
+    <div class="card-title">库迪/1点点 客群截流 <span class="tag">错位竞争</span></div>
+    <p style="font-size:14px;color:#5a4738;margin-bottom:6px">库迪和1点点卖的是咖啡/奶茶，你是中式糖水互补而非互抢。一个绝佳的洗客策略：</p>
+    <div class="hook-box">
+      <div class="hook-icon">换购</div>
+      <div class="hook-title">凭库迪或1点点当日消费小票</div>
+      <div class="hook-desc">到幸屿加3元换购价值15元手作糖水一杯<br>开业期间有效 每人限1次</div>
+    </div>
+    <ul>
+      <li><strong>为什么有效？</strong>库迪和1点点的顾客每天路过你家门口，3元换15元糖水对他们来说毫无决策成本</li>
+      <li><strong>为什么3元？</strong>因为免费会显得廉价，3元刚好让人感觉占了便宜又不会觉得东西差</li>
+      <li><strong>一个动作同时洗两家</strong>：库迪的咖啡客 + 1点点的奶茶客，全变成你的糖水体验用户</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-title">竞品对比矩阵</div>
+    <table>
+      <tr><th>店铺</th><th>品类</th><th>人均</th><th>幸屿差异化打法</th></tr>
+      <tr><td>库迪咖啡</td><td>咖啡</td><td>10-15</td><td>中式糖水有新鲜感 手工现做</td></tr>
+      <tr><td>1点点</td><td>奶茶</td><td>10-18</td><td>馄饨能吃饱 糖水能解暑 功能性更强</td></tr>
+      <tr><td>公安锅盔</td><td>小吃</td><td>8-12</td><td>有座位有糖水 适合坐下来歇脚</td></tr>
+      <tr><td>张亮麻辣烫</td><td>快餐</td><td>20-25</td><td>同价位但幸屿吃得更快不用等</td></tr>
+    </table>
+    <div class="highlight" style="margin-top:10px">
+      <div class="highlight-title">结论</div>
+      <p>在这条街上幸屿是唯一一个同时满足解渴+管饱+歇脚+手作感+性价比的店。关键是把糖水杯装化让顾客可以端着走在夜市里边逛边喝。</p>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title"><span class="emoji">店</span> 空间规划 坪效优先</div>
+
+  <div class="card">
+    <div class="card-title">60m2空间分配建议</div>
+    <p style="font-size:13px;color:#c85530;font-weight:600;margin-bottom:8px">金街夜市房租不便宜，坪效是生死线。千万不要60m2全做堂食。</p>
+    <table>
+      <tr><th>区域</th><th>面积</th><th>功能</th><th>占比</th></tr>
+      <tr><td>开放式操作台</td><td>20m2</td><td>现场包馄饨+煮糖水+出餐</td><td>33%</td></tr>
+      <tr><td>外带取餐窗</td><td>--</td><td>面向走廊的外带窗口直接接单</td><td>沿街面</td></tr>
+      <tr><td>堂食区</td><td>30m2</td><td>约6-8张桌 堂食+歇脚</td><td>50%</td></tr>
+      <tr><td>后厨+储物</td><td>10m2</td><td>备料+仓储</td><td>17%</td></tr>
+    </table>
+    <div class="highlight" style="margin-top:10px">
+      <div class="highlight-title">外带场景优先</div>
+      <p>外带取餐窗面向走廊，顾客路过直接扫码点单一杯糖水带走无需进店。高峰期堂食+外带双线并行，翻台率翻倍。</p>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title"><span class="emoji">火</span> 试营业蓄水</div>
 
   <div class="card">
     <div class="card-title">收藏打卡有礼 <span class="tag">替代好评返现</span></div>
@@ -174,7 +237,7 @@ table .gift{color:#e8835c;font-weight:600}
     </table>
     <div class="highlight">
       <div class="highlight-title">收银联动</div>
-      <p>每单结账时收银员提示收藏打卡送糖水，顾客扫码完成系统自动核销赠送品零人工对账。</p>
+      <p>每单结账时收银员提示收藏打卡送糖水，顾客扫码完成系统自动核销零人工对账。</p>
     </div>
   </div>
 
@@ -186,35 +249,18 @@ table .gift{color:#e8835c;font-weight:600}
       <tr><td>闺蜜糖水双人餐</td><td>2份馄饨+2份糖水</td><td>56</td><td class="price">39.9</td></tr>
       <tr><td>亲子开心套餐</td><td>馄饨+糖水+小食</td><td>45</td><td class="price">29.9</td></tr>
     </table>
-    <p style="margin-top:10px;font-size:13px">上线美团/点评团购收银系统自动核销团购券</p>
-  </div>
-
-  <div class="card">
-    <div class="card-title">门头/围挡引流</div>
-    <div class="highlight">
-      <p style="font-size:13px;white-space:pre-line;text-align:center;line-height:2">
-+-----------------------------------+
-|   幸屿馄饨手作糖水                  |
-|   试营业中 全场8.8折               |
-|   收藏打卡送小圆子                  |
-|     上楼即达                        |
-+-----------------------------------+
-      </p>
-    </div>
-    <p style="font-size:13px;color:#6a5748;margin-top:6px">金街夜市入口、电梯口、2楼楼梯口三处摆放</p>
   </div>
 
   <div class="card">
     <div class="card-title">小红书/抖音预热</div>
     <ul>
-      <li><strong>内容方向</strong>：金街夜市挖到宝藏糖水铺 手工现包馄饨治愈系小店</li>
-      <li><strong>达人策略</strong>：邀约3-5个本地探店号送双人免单体验换内容</li>
-      <li><strong>收银联动</strong>：达人用收银系统专属核销码到店数据自动统计</li>
+      <li><strong>内容方向</strong>：金街夜市挖到宝藏糖水铺 逛累了来碗手作糖水</li>
+      <li><strong>达人策略</strong>：邀约3-5个本地探店号送双人免单体验</li>
+      <li><strong>核心卖点</strong>：手作糖水杯装化 逛夜市边走边喝</li>
     </ul>
     <div class="tag-group">
-      <span class="tag-item">#金街夜市美食</span><span class="tag-item">#天津馄饨</span>
-      <span class="tag-item">#手作糖水</span><span class="tag-item">#治愈系小店</span>
-      <span class="tag-item">#幸屿馄饨</span>
+      <span class="tag-item">#金街夜市美食</span><span class="tag-item">#手作糖水</span>
+      <span class="tag-item">#逛吃天津</span><span class="tag-item">#幸屿馄饨</span>
     </div>
   </div>
 </div>
@@ -223,33 +269,17 @@ table .gift{color:#e8835c;font-weight:600}
   <div class="section-title"><span class="emoji">开</span> 开业引爆活动</div>
 
   <div class="card">
-    <div class="card-title">开业3天 统一主题逐日加码 <span class="tag">统一主题7折起</span></div>
+    <div class="card-title">开业3天 统一主题逐日加码 <span class="tag">统一7折起</span></div>
     <p style="font-size:14px;color:#e8835c;font-weight:600;text-align:center;margin-bottom:10px">主题：开业狂欢3天，全场套餐7折起</p>
     <table>
       <tr><th>天数</th><th>促销力度</th><th>赠品加码</th><th>原则</th></tr>
-      <tr>
-        <td><strong style="color:#e8835c">Day 1</strong></td>
-        <td>全场套餐7折</td>
-        <td class="gift">点招牌馄饨送限定糖水</td>
-        <td>赠品替代折扣不伤价格体系</td>
-      </tr>
-      <tr>
-        <td><strong style="color:#e8835c">Day 2</strong></td>
-        <td>全场套餐7折</td>
-        <td class="gift">糖水买一送一同价位</td>
-        <td>限定同价避免羊毛党钻空子</td>
-      </tr>
-      <tr>
-        <td><strong style="color:#e8835c">Day 3</strong></td>
-        <td>全场套餐7折</td>
-        <td class="gift">双人餐立减20</td>
-        <td>固定减额比半价可控</td>
-      </tr>
+      <tr><td>Day 1</td><td>全场套餐7折</td><td class="gift">点招牌馄饨送限定糖水</td><td>赠品替代折扣不伤价格</td></tr>
+      <tr><td>Day 2</td><td>全场套餐7折</td><td class="gift">糖水买一送一同价位</td><td>限定同价防羊毛党</td></tr>
+      <tr><td>Day 3</td><td>全场套餐7折</td><td class="gift">双人餐立减20</td><td>固定减额更可控</td></tr>
     </table>
     <div class="highlight">
-      <div class="highlight-title">为什么这样改？</div>
-      <p><b>原方案：</b>Day1买一送一Day2半价Day3五折，力度太猛恢复原价后客人立刻流失且容易引来职业羊毛党<br>
-      <b>现方案：</b>3天统一7折+逐日加码赠品。顾客记住一句开业套餐7折就够了转化率更高折扣温和价格回得去。</p>
+      <div class="highlight-title">相比原方案</div>
+      <p>原方案折扣太猛恢复原价后客人流失，现方案3天统一7折+逐日赠品温和可控。</p>
     </div>
   </div>
 
@@ -261,21 +291,11 @@ table .gift{color:#e8835c;font-weight:600}
       <tr><td>点评</td><td>双人超值套餐</td><td>2馄饨+2糖水+小吃</td><td class="price">49.9</td><td class="original">78</td></tr>
       <tr><td>抖音</td><td>三人家庭套餐</td><td>3馄饨+3糖水+3小食</td><td class="price">69.9</td><td class="original">108</td></tr>
     </table>
-    <p style="font-size:13px;color:#6a5748;margin-top:8px">统一7折定价三平台价格一致避免比价跳单</p>
-  </div>
-
-  <div class="card">
-    <div class="card-title">开业小活动</div>
-    <ul>
-      <li><strong>幸运大转盘</strong>：消费满30抽奖(糖水免单券/小菜加赠/下次8折)</li>
-      <li><strong>朋友圈集赞</strong>：到店拍照发圈集20赞送招牌馄饨1份</li>
-      <li><strong>气球派发</strong>：开业当天门口派发幸屿定制气球吸引金街夜市客流</li>
-    </ul>
   </div>
 </div>
 
 <div class="section">
-  <div class="section-title"><span class="emoji">锁</span> 留客钩子（核心新增）</div>
+  <div class="section-title"><span class="emoji">锁</span> 留客钩子</div>
 
   <div class="card">
     <div class="card-title">+0.1元锁客 开业热度拉长到第二周</div>
@@ -284,56 +304,44 @@ table .gift{color:#e8835c;font-weight:600}
       <div class="hook-title">今日消费满30 +0.1元换购价值15元糖水券</div>
       <div class="hook-desc">限7天内使用 每人限1次 收银系统自动核销</div>
     </div>
-    <p style="font-size:14px;color:#5a4738">为什么这个钩子好？</p>
-    <ul>
-      <li><strong>超低门槛</strong>：30消费在金街夜市吃碗馄饨+糖水轻松达到</li>
-      <li><strong>超强诱惑</strong>：0.1元换15元券感知价值极高几乎没人会拒绝</li>
-      <li><strong>二次到店</strong>：券限7天顾客一定会在开业后第2周再来一次</li>
-      <li><strong>系统自动</strong>：收银系统设置满30自动弹窗推荐无需员工推销</li>
-    </ul>
-    <div class="highlight">
-      <div class="highlight-title">预期效果</div>
-      <p>按开业3天到店300人次计算预计60%顾客参与锁客(约180人)其中70%会在7天内复购(约126人)二次复购客单价约25额外带动营收3150+。</p>
-    </div>
+    <p style="font-size:13px;color:#6a5748">预期：开业3天300人次，60%参与(180人)，70%复购(126人)，额外营收3150+</p>
   </div>
 
   <div class="card">
     <div class="card-title">企微/社群沉淀</div>
     <table>
-      <tr><th>渠道</th><th>钩子</th><th>话术参考</th></tr>
+      <tr><th>渠道</th><th>钩子</th><th>话术</th></tr>
       <tr><td>企业微信</td><td>加好友领5元券</td><td>加老板好友下次直接减5元</td></tr>
       <tr><td>社群</td><td>进群抽免单</td><td>扫码进吃货群每晚8点抽1份免单馄饨</td></tr>
     </table>
-    <p style="font-size:13px;color:#6a5748;margin-top:8px">开业期间收银台立牌+台卡二维码结账时顺便加一下</p>
   </div>
 </div>
 
 <div class="section">
-  <div class="section-title"><span class="emoji">卡</span> 美团收银系统实战应用</div>
+  <div class="section-title"><span class="emoji">卡</span> 美团收银系统实战</div>
 
   <div class="card">
     <div class="card-title">功能模块 x 阶段应用</div>
     <table>
-      <tr><th>功能模块</th><th>试营业用法</th><th>开业用法</th></tr>
-      <tr><td>智能扫码点单</td><td>桌贴点单码减少人工</td><td>高峰期自助分流</td></tr>
-      <tr><td>团购核销</td><td>试营业套餐自动核销</td><td>开业套餐快速核销</td></tr>
-      <tr><td>支付后引导评价</td><td>引导收藏打卡冲星</td><td>积累真实评价上星级</td></tr>
-      <tr><td>会员体系</td><td>试营业登记送券</td><td>开业储值送金额</td></tr>
-      <tr><td>经营日报</td><td>分析试营业菜品热度</td><td>每天看爆款TOP5</td></tr>
-      <tr><td>库存预警</td><td>馄饨皮馅预警</td><td>开业高峰期不断货</td></tr>
-      <tr><td style="color:#c85530">锁客设置</td><td>--</td><td style="color:#c85530">满30自动弹+0.1元换购提示</td></tr>
+      <tr><th>功能</th><th>试营业</th><th>开业</th></tr>
+      <tr><td>智能扫码点单</td><td>桌贴点单码</td><td>高峰期自助分流</td></tr>
+      <tr><td>团购核销</td><td>套餐自动核销</td><td>开业套餐快速核销</td></tr>
+      <tr><td>支付后引导评价</td><td>引导收藏打卡</td><td>积累评价上星级</td></tr>
+      <tr><td>会员体系</td><td>登记送券</td><td>开业储值送金额</td></tr>
+      <tr><td>经营日报</td><td>分析菜品热度</td><td>每天看爆款TOP5</td></tr>
+      <tr><td>库存预警</td><td>馄饨皮馅预警</td><td>高峰期不断货</td></tr>
+      <tr><td style="color:#c85530">锁客设置</td><td>--</td><td style="color:#c85530">满30自动弹+0.1元换购</td></tr>
     </table>
   </div>
 
   <div class="card">
     <div class="card-title">会员储值方案(开业推)</div>
     <table>
-      <tr><th>储值金额</th><th>赠送金额</th><th>实际到账</th><th>相当于</th></tr>
-      <tr><td>充 100</td><td>送 15</td><td>115</td><td>8.7折</td></tr>
-      <tr><td>充 200</td><td>送 40</td><td>240</td><td>8.3折</td></tr>
-      <tr><td>充 500</td><td>送 120</td><td>620</td><td>8.1折</td></tr>
+      <tr><th>储值</th><th>赠送</th><th>到账</th><th>折扣</th></tr>
+      <tr><td>充100</td><td>送15</td><td>115</td><td>8.7折</td></tr>
+      <tr><td>充200</td><td>送40</td><td>240</td><td>8.3折</td></tr>
+      <tr><td>充500</td><td>送120</td><td>620</td><td>8.1折</td></tr>
     </table>
-    <p style="font-size:13px;color:#6a5748;margin-top:8px">金街夜市周边居民上班族储值后复购率可提升60%</p>
   </div>
 </div>
 
@@ -341,31 +349,18 @@ table .gift{color:#e8835c;font-weight:600}
   <div class="section-title"><span class="emoji">星</span> 点评冲星计划</div>
 
   <div class="card">
-    <p style="font-size:14px;color:#5a4738;margin-bottom:12px">现在<strong>暂无星级</strong> 目标 <strong>15天冲上星级 30天4星</strong></p>
+    <p style="font-size:14px;color:#5a4738;margin-bottom:12px">暂无星级 目标 15天冲星 30天4星</p>
     <div class="star-step step-week1">
       <div class="step-num">W1</div>
-      <div class="step-text">
-        <div class="step-title">试营业周 积累20条评价</div>
-        <div class="step-desc">每单支付后提示写评价每桌送糖水换真实评价收银系统支付后自动弹出引导页。</div>
-      </div>
+      <div class="step-text"><div class="step-title">试营业周 积累20条评价</div><div class="step-desc">支付后引导评价 送糖水换真实评价 收银系统自动弹出</div></div>
     </div>
     <div class="star-step step-week2">
       <div class="step-num">W2</div>
-      <div class="step-text">
-        <div class="step-title">预热周 积累50条评价</div>
-        <div class="step-desc">邀请回头客写长评配合开业套餐推广差评1小时内回复处理。</div>
-      </div>
+      <div class="step-text"><div class="step-title">预热周 积累50条评价</div><div class="step-desc">回头客写长评 差评1小时内回复处理</div></div>
     </div>
     <div class="star-step step-week3">
       <div class="step-num">W3</div>
-      <div class="step-text">
-        <div class="step-title">开业爆发 冲4星</div>
-        <div class="step-desc">持续引导评价+收藏打卡差评专人跟进回复稳定店铺评分。</div>
-      </div>
-    </div>
-    <div class="highlight" style="margin-top:12px">
-      <div class="highlight-title">收银系统评价引导妙用</div>
-      <p>支付后小票扫码自动跳点评写评价页评价引导转化率比人工口述高3倍且每笔交易数据自动沉淀方便统计评价完成率。</p>
+      <div class="step-text"><div class="step-title">开业爆发 冲4星</div><div class="step-desc">持续引导评价+收藏打卡 稳定评分</div></div>
     </div>
   </div>
 </div>
@@ -375,36 +370,12 @@ table .gift{color:#e8835c;font-weight:600}
 
   <div class="card">
     <div class="timeline">
-      <div class="timeline-item">
-        <div class="tl-time">现在</div>
-        <div class="tl-title">试营业蓄水期</div>
-        <div class="tl-desc">收藏打卡活动上线 试营业套餐上架 达人探店邀约</div>
-      </div>
-      <div class="timeline-item">
-        <div class="tl-time">开业前7天</div>
-        <div class="tl-title">预热造势</div>
-        <div class="tl-desc">围挡换开业预告 抖音倒计时 小红书种草笔记发布</div>
-      </div>
-      <div class="timeline-item">
-        <div class="tl-time">开业前3天</div>
-        <div class="tl-title">团购上线系统配置</div>
-        <div class="tl-desc">美团/点评/抖音上架开业套餐 收银系统配置7折+赠品+0.1元锁客钩子</div>
-      </div>
-      <div class="timeline-item">
-        <div class="tl-time">Day 1-3</div>
-        <div class="tl-title">开业引爆(统一主题逐日加码)</div>
-        <div class="tl-desc">全场套餐7折起 Day1送糖水 Day2糖水买一送一 Day3双人餐立减20 全程推0.1元锁客券</div>
-      </div>
-      <div class="timeline-item">
-        <div class="tl-time">开业后1周</div>
-        <div class="tl-title">锁客券核销高峰数据复盘</div>
-        <div class="tl-desc">+0.1元糖水券集中到店核销 看收银系统日报 调整菜品结构优化价格策略</div>
-      </div>
-      <div class="timeline-item">
-        <div class="tl-time">开业后1月</div>
-        <div class="tl-title">会员深度运营</div>
-        <div class="tl-desc">推储值卡 企微社群发券唤醒 金街夜市复购客群沉淀私域</div>
-      </div>
+      <div class="timeline-item"><div class="tl-time">现在</div><div class="tl-title">试营业蓄水</div><div class="tl-desc">收藏打卡 试饮截流 门头海报安装 逛吃套餐上线</div></div>
+      <div class="timeline-item"><div class="tl-time">开业前7天</div><div class="tl-title">预热造势</div><div class="tl-desc">围挡换开业预告 库迪/1点点换购预热 小红书种草</div></div>
+      <div class="timeline-item"><div class="tl-time">开业前3天</div><div class="tl-title">系统配置</div><div class="tl-desc">团购上架 收银系统设置7折+赠品+0.1元锁客+换购</div></div>
+      <div class="timeline-item"><div class="tl-time">Day 1-3</div><div class="tl-title">开业引爆</div><div class="tl-desc">7折+赠品逐日加码 员工试饮截流 凭小票换购 推锁客券</div></div>
+      <div class="timeline-item"><div class="tl-time">开业后1周</div><div class="tl-title">锁客核销高峰</div><div class="tl-desc">糖水券到店核销 复盘菜品数据 调整定价</div></div>
+      <div class="timeline-item"><div class="tl-time">开业后1月</div><div class="tl-title">会员运营</div><div class="tl-desc">储值卡 社群发券 复购客群沉淀私域</div></div>
     </div>
   </div>
 </div>
@@ -415,24 +386,25 @@ table .gift{color:#e8835c;font-weight:600}
   <div class="card">
     <table>
       <tr><th>项目</th><th>预算</th><th>说明</th></tr>
-      <tr><td>收藏打卡赠送糖水</td><td>500</td><td>试营业期按100份赠送食材成本</td></tr>
-      <tr><td>试营业套餐让利</td><td>800</td><td>让利部分作为引流成本</td></tr>
-      <tr><td>达人探店邀约</td><td>1,500</td><td>3-5个本地号免单车马费</td></tr>
-      <tr><td>开业物料</td><td>600</td><td>围挡DM单转盘气球台卡二维码</td></tr>
-      <tr><td>开业3天让利+赠品</td><td>1,500</td><td>7折+赠品+锁客券成本(比原方案降500)</td></tr>
-      <tr><td>+0.1元锁客券</td><td>500</td><td>预计180人参与糖水成本约2.8/份</td></tr>
-      <tr><td style="font-weight:700;color:#e85d3a">合计</td><td style="font-weight:700;color:#e85d3a">5,400</td><td>优化后成本不变但客单价损伤更小</td></tr>
+      <tr><td>收藏打卡赠送糖水</td><td>500</td><td>试营业期100份食材成本</td></tr>
+      <tr><td>试营业套餐让利</td><td>800</td><td>引流成本</td></tr>
+      <tr><td>达人探店邀约</td><td>1,500</td><td>3-5个本地号</td></tr>
+      <tr><td>开业物料+门头海报</td><td>800</td><td>围挡灯箱DM单转盘气球试饮杯</td></tr>
+      <tr><td>开业3天让利+赠品</td><td>1,500</td><td>7折+赠品+锁客券成本</td></tr>
+      <tr><td>+0.1元锁客券</td><td>500</td><td>180人参与食材成本</td></tr>
+      <tr><td>试饮截流(3天)</td><td>300</td><td>每天200杯试饮品成本</td></tr>
+      <tr><td style="font-weight:700;color:#e85d3a">合计</td><td style="font-weight:700;color:#e85d3a">5,900</td><td>含试饮截流新增成本</td></tr>
     </table>
-    <div class="highlight" style="margin-top:10px">
-      <div class="highlight-title">ROI预估(优化后)</div>
-      <p>开业当月引流到店300-500人次加上锁客券带动的二次复购(预计126人)总营收预估18,000-28,000营销ROI约1:4~1:5且客单价损伤比原方案降低40%。</p>
+    <div class="highlight">
+      <div class="highlight-title">ROI预估</div>
+      <p>开业当月引流400-600人次+锁客二次复购126人+外带场景增量，总营收预估2万-3万，营销ROI约1:4~1:5。</p>
     </div>
   </div>
 </div>
 
 <div class="footer">
   <p>策划：苏苏 美团SAAS智能收银</p>
-  <p style="font-size:12px;margin-top:4px">2026年7月 V2.0 风险优化版 为幸屿馄饨手作糖水定制</p>
+  <p style="font-size:12px;margin-top:4px">2026年7月 V2.1 位置精耕版 为幸屿馄饨手作糖水定制</p>
 </div>
 
 </body>
